@@ -1,52 +1,33 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <title>Ritzztech Form</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            .container{
-                width:40%;
-                border:1px solid black;
-                margin:  auto;
-                padding: 20px;
-            }
-        </style>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
     <body>
-        <h1>WELCOME TO REGISTRATION PAGE</h1>
-        <div class ="container">
-            <h1>Enter your Details For RitzzTech</h1>
-            <form action="Registerservlet" method="post">
-                <table>
-                    <tr>
-                        <td> Enter your name :</td>
-                        <td> <input type="text" name="user_name"/> </td>
-                    </tr>
-                    <tr>
-                        <td>Enter your password:</td>
-                        <td><input type="password" name="user_pw" /></td>
-                    </tr>
-                    <tr>
-                        <td>Enter your mail ID :</td>
-                        <td><input type="email" name="user_mail"/></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>
-                            <button type="submit">Register</button>
-                            
-                            <button type="submit">Sign in</button>
-                        </td>
-                    </tr>
+        <div class="container my-5">
+            <h1 class="text-center">WELCOME TO REGISTRATION PAGE</h1>
+            <form action="Registerservlet" method="post" class="my-5">
+                <div class="form-group">
+                    <label for="userName">Enter your name :</label>
+                    <input type="text" class="form-control" id="userName" name="user_name" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="userPassword">Enter your password:</label>
+                    <input type="password" class="form-control" id="userPassword" name="user_pw" />
+                </div>
+                <div class="form-group">
+                    <label for="userEmail">Enter your mail ID :</label>
+                    <input type="email" class="form-control" id="userEmail" name="user_mail" />
+                </div>
+                <div class="form-group d-flex">
+                    <button type="submit" class="btn btn-primary">Register/Sign in</button>
                     
-                    
-                </table>
+                </div>
             </form>
-            
         </div>
-        
     </body>
 </html>
-  

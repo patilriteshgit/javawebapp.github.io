@@ -1,16 +1,44 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>HOME PAGE</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        
-        <H1>WELCOME TO THE HOME PAGE</H1>
-        <DIV></DIV>
-    <H3>TO GO TO THE REGISTRATION PAGE CLICK HERE: </H3>
-    <a href="index.html" >Registration page</a>
-   
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <style>
+      .footer {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+      }
+    </style>
+    <title>Project Name - Home</title>
+  </head>
+  <body>
+    <div class="container my-5">
+      <h1 class="text-center">JAVA WEB APPLICATION FORM USING JDBC</h1>
+      <p class="text-justify mt-3">
+        This is the Home page of this project which directs to the registration page
+        which takes input from the user and by form action submit & method post it sends the data to the HTTPservlet in which by the do post values are fetched and displayed 
+        and then processed to store in MySQL DB by JDBC Connection.
+        If the same name & password entered again request will directed to login successfull JSP page.
+        In login jsp form field ,the username which needs to be deleted can be provided and the request will be directed to deletusername.jsp in which by the jstl sql tags upadte operation is perrformed.
+ 
+      </p>
+      <div class="d-flex justify-content-center my-5">
+        <a href="index.html" class="btn btn-primary">Register</a>
+      </div>
+    </div>
+    <div class="footer bg-light py-3">
+      <div class="container">
+        <p class="text-right pr-3">Made by Ritesh patil</p>
+      </div>
+    </div>
+  </body>
 </html>
+
